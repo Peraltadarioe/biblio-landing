@@ -32,7 +32,6 @@ body {
   }
 }
 
-
 section {
   width: 100%;
   margin-bottom: 25px;
@@ -45,7 +44,7 @@ section {
 
 header {
   width: 100%;
-  height: 50px;
+  height: 80px;
   color:  rgb(255, 255, 255);
   position: fixed;
   top: 0;
@@ -57,7 +56,7 @@ header {
 }
 
 header img {
-  height: 48px;
+  height: 78px;
 }
 
 header .contenedor {
@@ -68,16 +67,17 @@ header .contenedor {
   display: none;
 }
 
+/* hamburguer  */
 header label {
   float: right;
-  font-size: 1.5em;
-  margin: 8px 0;
+  font-size: 2em;
+  margin: 15px 0;
   cursor: pointer;
 }
 
 .menu {
   position: absolute;
-  top: 50px;
+  top: 80px;
   left: 0;
   width: 100%;
   height: 100vh;
@@ -103,17 +103,10 @@ header label {
 #menu-bar:checked ~ .menu {
   transform: translateX(0%);
   background: rgba(70, 69, 69, 0.7);
-  
 }
 
 @media (min-width:1024px) {
-  header {
-    height: 100px;
-  }
-  header img {
-    height: 98px;
-  }
-
+  
   #bienvenidos {
     margin-top: 200px;
     position: relative;
@@ -143,7 +136,7 @@ header label {
 
 /* BIENVENIDOS SECTION -------------------------------------*/
 #bienvenidos {
-  margin-top: 50px;
+  margin-top: 80px;
   position: relative;
   width: 100%;
   min-height: calc(100vh - 75px);
@@ -159,7 +152,7 @@ header label {
 }
 
 .bienvenidos-title {
-  font-size: 2em;
+  font-size: 3em;
   font-weight: 800;
   color: white;
 }
@@ -176,16 +169,12 @@ header label {
   color: black;
 }
 
-@media (min-width:1024px) {
-  #bienvenidos {
-    margin-top: 100px;
-  }
-
+@media (min-width:768px) {
+  
   .bienvenidos-contenedor {
     display: flex;
     flex-direction: row;
     height: 100vh;
-
   }
 
   .bienvenidos-title {
